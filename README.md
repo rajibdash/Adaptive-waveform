@@ -24,3 +24,7 @@ Today, E/// follows below ways in short ...
 
 ---
 
+# One step: 
+* **Deep Learning Component Replacement**: To replace traditionally engineered blocks (such as
+  __channel estimation__, __equalization__, __demodulation__ and __bit-level interleaving__)
+  with E2E trained Neural Networks (Release 19 Neural Receiver).
