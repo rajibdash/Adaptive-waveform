@@ -1,12 +1,32 @@
 # Adaptive waveform
-**Purpose**: AI dynamically constructs context aware waveforms OTA(over the air) depending on real-time multipath profiles and mobility indexes, leaving predefined OFDM standards.
 
-While E///'s Cloud RAN is currently embedding deep learning directly into the 5G-Advanced physical layer (L1/L2 software),
-true dynamic waveform generation via AI—where the air interface completely abandons predefined OFDM standards and instead invents 
-its own custom radio waveform using an encoder/decoder neural network—is a pillar of AI-native 6G networks. E/// is currently 
+**Purpose**: AI dynamically constructs context aware waveforms OTA(over the air) depending on real time multipath profiles and mobility indexes, leaving predefined OFDM standards.
+
+# Why it is needed?
+
+We can say AI-native adaptive waveforms replace fixed standards like OFDM (Orthogonal Frequency-Division Multiplexing) with real-time, neural-network-generated physical layers tailored to 
+immediate varrying channel conditions. Instead of relying on a rigid, predefined mathematical grids, an **AI transceiver** constructs custom waveforms over the air based on real time multipath 
+profiles and mobility indexes.
+
+# Core Architecture & Mechanism needed
+
+* **E2E Autoencoder Transceivers**: The physical layer is modeled as a deep neural network where the transmitter acts as an encoder and the receiver acts as a decoder.
+  The wireless channel (incorporating fading, Doppler shift, and noise) is treated as a non-trainable intermediate layer during training.
+  
+* **Context-Aware Conditioning**: Real-time Channel State Information (CSI)—specifically delay spread (multipath) and Doppler spread (mobility)—is fed as conditioning inputs
+  into the neural transmitter. The AI dynamically shapes the waveform's time-frequency localization on the fly.
+  
+* **Over-the-Air (OTA) Adaptation**: Because the channel varies continuously in dynamic manner, the transmitter and receiver synchronize their **neural weights** or **latent
+  representations** using lightweight control signaling or shared online meta-learning.
+
+# Future design?
+
+While E///'s cloud RAN is currently embedding deep learning directly into the 5G Advanced physical layer (L1/L2 software),
+true dynamic waveform generation via AI where the air interface completely abandons predefined OFDM standards and instead invents 
+its own custom radio waveform using an encoder/decoder neural network is a pillar of AI-native 6G networks. E/// is currently 
 designing these native 6G air-interface architectures alongside partners like Qualcomm for commercialization around 2030.
 
-# What is today?
+# How managed today?
 
 Today, E/// follows below ways in short ...
 
