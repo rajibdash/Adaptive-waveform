@@ -25,6 +25,13 @@ While E///'s cloud RAN is currently embedding deep learning directly into the 5G
 true dynamic waveform generation via AI where the air interface completely abandons predefined OFDM standards and instead invents 
 its own custom radio waveform using an encoder/decoder neural network is a pillar of AI-native 6G networks. E/// is currently 
 designing these native 6G air-interface architectures alongside partners like Qualcomm for commercialization around 2030.
+AI-Native Physical Layer (PHY) in 6G and next-generation wireless communications.
+
+```
+[Input Bits] ──> [ Neural Network Encoder ] ──> (Continuous OTA Waveform) ──> [ Neural Network Decoder ] ──> [Bits]
+                     │                                                                     ▲
+                     └─── Real-time Channel Feedback: Multipath & Mobility Index ──────────┘
+```
 
 # How managed today?
 
