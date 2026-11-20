@@ -28,7 +28,7 @@ designing these native 6G air-interface architectures alongside partners like Qu
 AI-Native Physical Layer (PHY) in 6G and next-generation wireless communications.
 
 ```
-[Input Bits] ──> [ Neural Network Encoder ] ──> (Continuous OTA Waveform) ──> [ Neural Network Decoder ] ──> [Bits]
+[Input Bits] ──> [Neural Network Encoder] ──> (Continuous OTA Waveform) ──> [Neural Network Decoder] ──> [Bits]
                      │                                                                     ▲
                      └─── Real-time Channel Feedback: Multipath & Mobility Index ──────────┘
 ```
